@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<component name="com.mycompany.productmgt.listener.not-sold-product">
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+    <listener name="not-sold-product" class="com.mycompany.productmgt.NotSoldProduct">
+      <event>not-sold</event>
+    </listener>
+  </extension>
+
+</component>

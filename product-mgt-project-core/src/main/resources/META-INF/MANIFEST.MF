@@ -1,0 +1,13 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.mycompany.productmgt
+Bundle-Version: 1.0.0
+Bundle-Name: product-mgt-project-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.mycompany.productmgt.product-mgt-project-core;singleton=true
+Nuxeo-Component: OSGI-INF/product-service-service.xml,
+ OSGI-INF/product-updater-operation-contrib.xml,
+ OSGI-INF/com.mycompany.productmgtproduct-adapter-contrib.xml,
+ OSGI-INF/not-sold-product-listener-contrib.xml
+Nuxeo-WebModule: org.nuxeo.ecm.webengine.app.WebEngineModule;name=myWebApp;package=com/mycompany/productmgt

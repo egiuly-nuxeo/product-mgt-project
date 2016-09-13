@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<component name="com.mycompany.productmgt.service.product-service" version="1.0">
+
+  <implementation class="com.mycompany.productmgt.ProductServiceImpl" />
+
+  <service>
+    <provide interface="com.mycompany.productmgt.ProductService" />
+  </service>
+  
+  <extension-point name="priceUpdate">
+     <documentation>
+       This extension can be used to configure product price update
+     </documentation>
+     <object class="com.mycompany.productmgt.PriceUpdateDescriptor"/>
+  </extension-point>
+    
+</component>
